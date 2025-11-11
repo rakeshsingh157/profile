@@ -311,6 +311,7 @@
         .social-link.telegram { border-color: #0088cc; }
         .social-link.email { border-color: #ea4335; }
         .social-link.portfolio { border-color: var(--primary-color); }
+        .social-link.payment { border-color: #00d4aa; }
 
         .social-link.linkedin:hover { background: rgba(0, 119, 181, 0.2); }
         .social-link.github:hover { background: rgba(51, 51, 51, 0.2); }
@@ -319,6 +320,14 @@
         .social-link.telegram:hover { background: rgba(0, 136, 204, 0.2); }
         .social-link.email:hover { background: rgba(234, 67, 53, 0.2); }
         .social-link.portfolio:hover { background: rgba(0, 255, 136, 0.2); }
+        .social-link.payment:hover { background: rgba(0, 212, 170, 0.2); }
+        
+        /* Hide Pay Me button on desktop, show only on mobile */
+        @media (min-width: 769px) {
+            .social-link.payment {
+                display: none;
+            }
+        }
 
         .social-link i {
             font-size: 1.5rem;
@@ -626,6 +635,11 @@
                     <a href="#" class="social-link portfolio" id="portfolio-link">
                         <i class="fas fa-briefcase"></i>
                         <span>Portfolio (Soon)</span>
+                    </a>
+                    
+                    <a href="upi://pay?pa=kumarpatelrakesh222@okhdfcbank&pn=Rakesh%20Singh&aid=uGICAgIDTgpjMBA" class="social-link payment">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Pay Me</span>
                     </a>
                 </div>
 

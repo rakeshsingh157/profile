@@ -289,6 +289,19 @@
             color: white;
         }
 
+        .social-link.payment:hover {
+            border-color: #00d4aa;
+            background: linear-gradient(135deg, #00d4aa, #00b894);
+            color: white;
+        }
+        
+        /* Hide Pay Me button on desktop, show only on mobile */
+        @media (min-width: 769px) {
+            .social-link.payment {
+                display: none;
+            }
+        }
+
         /* Profile Card */
         .profile-card {
             background: var(--bg-card);
@@ -787,6 +800,11 @@
                     <a href="#" class="social-link portfolio">
                         <i class="fas fa-briefcase"></i>
                         Portfolio (Soon)
+                    </a>
+                    
+                    <a href="upi://pay?pa=kumarpatelrakesh222@okhdfcbank&pn=Rakesh%20Singh&aid=uGICAgIDTgpjMBA" class="social-link payment">
+                        <i class="fas fa-credit-card"></i>
+                        Pay Me
                     </a>
                 </div>
 
